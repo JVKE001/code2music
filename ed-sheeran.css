@@ -44,7 +44,7 @@ header {
 }
 
 #billie-journey {
-  background: url("/images/ed.jpg") no-repeat center top/cover;
+  background: url("images/ed.jpg") no-repeat center top/cover;
   background-attachment: fixed;
   min-height: 100vh;
   display: flex;
