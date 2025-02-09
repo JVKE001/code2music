@@ -1,0 +1,220 @@
+@media (max-width: 991px) {
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #4b0082, #4b0082);
+    border-radius: 0 0 10px 10px;
+  }
+
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .navbar-nav .nav-link {
+    color: white !important;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    width: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card img {
+    max-width: 120px;
+    max-height: 120px;
+  }
+
+  .card h4 {
+    font-size: 1rem;
+  }
+}
+
+/* For smaller screens under 830px */
+@media (max-width: 830px) {
+  #billie-journey {
+    padding: 10px 0;
+  }
+
+  .overlay {
+    width: 95%;
+    padding: 10px;
+  }
+
+  #billie-journey h2 {
+    font-size: 24px;
+  }
+
+  #billie-journey p {
+    font-size: 14px;
+  }
+
+  .audio-item {
+    gap: 5px;
+    padding: 8px;
+    width: 100%;
+    max-width: 914px;
+  }
+
+  .audio-details {
+    gap: 0px;
+  }
+
+  .audio-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .audio-info {
+    width: 200px;
+  }
+
+  .audio-info h3 {
+    font-size: 15px;
+  }
+
+  .audio-info p {
+    font-size: 12px !important;
+  }
+
+  audio {
+    width: 120px !important;
+    height: 40px;
+  }
+}
+
+/* For small phones */
+@media (max-width: 576px) {
+  #billie-journey {
+    padding: 10px 0;
+  }
+
+  .overlay {
+    width: 95%;
+    padding: 10px;
+  }
+
+  #billie-journey h2 {
+    font-size: 24px;
+  }
+
+  #billie-journey p {
+    font-size: 14px;
+  }
+
+  .audio-item {
+    width: 100%;
+    padding: 8px;
+    flex-direction: column;
+    gap: 8px; /* Reduce gap between elements */
+  }
+
+  .audio-image {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 8px; /* Reduce margin between image and text */
+  }
+
+  .audio-info h3 {
+    font-size: 14px;
+  }
+
+  .audio-info p {
+    font-size: 10px;
+  }
+
+  audio {
+    width: 95% !important;
+    margin: auto;
+  }
+
+  .video-container {
+    padding: 8px;
+  }
+
+  video {
+    max-height: 250px;
+  }
+}
+
+/* For very small phones (extra small screens) */
+@media (max-width: 360px) {
+  header {
+    padding: 6px;
+  }
+
+  .back-button a {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 18px;
+  }
+
+  #billie-journey {
+    padding: 5px 0;
+  }
+
+  .overlay {
+    width: 95%;
+    padding: 8px;
+  }
+
+  #billie-journey h2 {
+    font-size: 20px;
+  }
+
+  #billie-journey p {
+    font-size: 12px;
+  }
+
+  .audio-item {
+    width: 100%;
+    padding: 5px;
+    flex-direction: column;
+    gap: 5px; /* Reduce gap even more */
+  }
+
+  .audio-image {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px; /* Reduce margin between image and text */
+  }
+
+  .audio-info h3 {
+    font-size: 12px;
+  }
+
+  .audio-info p {
+    font-size: 8px;
+  }
+
+  audio {
+    width: 160px;
+  }
+
+  .video-container {
+    padding: 6px;
+  }
+
+  video {
+    max-height: 200px;
+  }
+}

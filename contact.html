@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code2Music</title>
+
+    <!----------------------------------------------------- LINKS ----------------------------------------------------->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="media.css" />
+
+    <!----------------------------------------------------------------------------------------------------------------------->
+  </head>
+  <body>
+    <!------------------------------------------------------ HEADER --------------------------------------------------------->
+
+    <header class="container-fluid fixed-top m-0 p-0">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="home.html"
+            ><img src="images/logo.webp" alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="live-show.html">Live Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="music.html">Music</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="concert.html">Concerts & Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-------------------------------------------------- BANNER_SECTION ----------------------------------------------------->
+
+    <section class="container-fluid m-0 p-0">
+      <div class="bannerbg">
+        <div class="banner">
+          <h1>Get in Touch with Us!</h1>
+          <p>
+            Whether you have questions, feedback, or just want to share your
+            love for music, we're all ears! Connect with us and be a part of the
+            Code2Music community—where every beat matters and every voice is
+            heard. Let's make some musical magic together!"
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!----------------------------------------------- CONTACT_FORM_SECTION -------------------------------------------------->
+
+    <section class="container-fluid pt-5" id="contact">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="contact__address">
+            <div class="section-title">
+              <h2>Contact info</h2>
+            </div>
+            <p>
+              Have questions or need assistance? Feel free to reach out to us.
+              We're here to help!
+            </p>
+            <ul>
+              <li>
+                <i class="fa fa-map-marker"></i>
+                <h5>Address</h5>
+                <p>Los Angeles Gournadi, 1230 Bariasl</p>
+              </li>
+              <li>
+                <i class="fa fa-phone"></i>
+                <h5>Hotline</h5>
+                <span>1-677-124-44227</span>
+                <span>1-688-356-66889</span>
+              </li>
+              <li>
+                <i class="fa fa-envelope"></i>
+                <h5>Email</h5>
+                <p>Support@gamail.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="contact__form">
+            <div class="section-title">
+              <h2>Get in touch</h2>
+            </div>
+            <p>
+              We’d love to hear from you! If you have any questions or need
+              support, don’t hesitate to reach out. Our team is ready to assist
+              you.
+            </p>
+            <form action="#">
+              <div class="input__list">
+                <input type="text" placeholder="Name" required />
+                <input type="email" placeholder="Email" required />
+                <input type="tel" placeholder="Mobile Number" required />
+              </div>
+              <textarea placeholder="Comment"></textarea>
+              <button type="submit" class="site-btn">SEND MESSAGE</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!------------------------------------------------- FOOTER_SECTION ------------------------------------------------------>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Social Media Section -->
+        <div class="footer-content">
+          <h3>Stay Connected</h3>
+          <p>
+            Follow us on our social media channels for the latest updates and
+            exclusive content:
+          </p>
+          <div class="social-icons">
+            <a
+              href="https://www.facebook.com/YourMusicPage"
+              target="_blank"
+              class="facebook"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.twitter.com/YourMusicPage"
+              target="_blank"
+              class="twitter"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/coded__beats"
+              target="_blank"
+              class="instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://youtube.com/@songsupdates1?si=WAPbnPGpzqCe1JZI"
+              target="_blank"
+              class="youtube"
+            >
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Newsletter Section -->
+        <div class="footer-content">
+          <h3>Subscribe to Our Newsletter</h3>
+          <p>Get the latest news and updates directly in your inbox:</p>
+          <form class="newsletter-form">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="newsletter-input"
+            />
+            <button type="submit" class="newsletter-button">Subscribe</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom Section -->
+      <div class="footer-bottom">
+        <p>&copy; 2025 Your Music Website. All rights reserved.</p>
+        <p>Privacy Policy | Terms of Service | Contact Us</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

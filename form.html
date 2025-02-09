@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Booking Form</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <style>
+      /* Custom Styles */
+      body {
+        background-color: #2d1e40;
+        color: #fff;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        max-width: 500px;
+        background: #4b2c69;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+        margin-top: 50px;
+      }
+
+      h2 {
+        text-align: center;
+        color: #d9b3ff;
+      }
+
+      .form-control,
+      .form-select {
+        background-color: #3a1f53;
+        border: 1px solid #d9b3ff;
+        color: #fff;
+      }
+
+      .form-control::placeholder {
+        color: #bba2d6;
+      }
+
+      .form-control:focus,
+      .form-select:focus {
+        border-color: #e0aaff;
+        box-shadow: 0 0 5px #e0aaff;
+      }
+
+      .btn-primary {
+        background-color: #a463d8;
+        border: none;
+      }
+
+      .btn-primary:hover {
+        background-color: #8738c5;
+      }
+
+      .btn-secondary {
+        background-color: #6b3fa0;
+        border: none;
+      }
+
+      .btn-secondary:hover {
+        background-color: #5a3088;
+      }
+
+      .form-check-input:checked {
+        background-color: #a463d8;
+        border-color: #a463d8;
+      }
+
+      .form-check-label {
+        color: #d9b3ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2><i class="fa-solid fa-ticket"></i> Book Your Ticket 🎶</h2>
+      <form>
+        <div class="mb-3">
+          <label for="name" class="form-label"
+            ><i class="fa-solid fa-user"></i> Full Name</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label"
+            ><i class="fa-solid fa-envelope"></i> Email Address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="phone" class="form-label"
+            ><i class="fa-solid fa-phone"></i> Phone Number</label
+          >
+          <input
+            type="tel"
+            class="form-control"
+            id="phone"
+            placeholder="Enter your phone number"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="event" class="form-label"
+            ><i class="fa-solid fa-music"></i> Select Event</label
+          >
+          <select class="form-select" id="event" required>
+            <option value="" disabled selected>Choose an event</option>
+            <option value="concert">Live Concert</option>
+            <option value="festival">Music Festival</option>
+            <option value="meet-greet">Meet & Greet</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="tickets" class="form-label"
+            ><i class="fa-solid fa-ticket"></i> Number of Tickets</label
+          >
+          <input
+            type="number"
+            class="form-control"
+            id="tickets"
+            min="1"
+            max="10"
+            value="1"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label"
+            ><i class="fa-solid fa-credit-card"></i> Payment Method</label
+          >
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="payment"
+              id="creditCard"
+              value="creditCard"
+              required
+            />
+            <label class="form-check-label" for="creditCard"
+              >Credit/Debit Card</label
+            >
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="payment"
+              id="paypal"
+              value="paypal"
+            />
+            <label class="form-check-label" for="paypal">PayPal</label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="payment"
+              id="upi"
+              value="upi"
+            />
+            <label class="form-check-label" for="upi">UPI Payment</label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">
+          <i class="fa-solid fa-paper-plane"></i> Book Now
+        </button>
+        <button
+          type="button"
+          class="btn btn-secondary w-100 mt-2"
+          onclick="goBack()"
+        >
+          <a href="concert.html" style="text-decoration: none; color: #fff"
+            ><i class="fas fa-arrow-left"></i> Back</a
+          >
+        </button>
+      </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
