@@ -12,41 +12,6 @@
     flex-direction: column;
     align-items: center !important;
   }
-
-  .navbar-nav .nav-link {
-    color: white !important;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 768px) {
-  .banner h1 {
-    font-size: 2.5rem;
-  }
-
-  .banner p {
-    font-size: 1rem;
-    max-width: 100%;
-  }
-}
-/* Responsive Design */
-@media (max-width: 768px) {
-  .card {
-    width: 200px;
-  }
-}
-
-@media (max-width: 576px) {
-  .card img {
-    max-width: 120px;
-    max-height: 120px;
-  }
-
-  .card h4 {
-    font-size: 1rem;
-  }
-}
-
 /* For smaller screens under 830px */
 @media (max-width: 830px) {
   #billie-journey {
