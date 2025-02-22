@@ -17,6 +17,10 @@
     font-size: 14px;
   }
 
+  .video {
+    height: 400px;
+  }
+
   .audio-item {
     gap: 5px;
     padding: 8px;
@@ -68,6 +72,10 @@
 
   #billie-journey p {
     font-size: 14px;
+  }
+
+  .video {
+    height: 300px;
   }
 
   .audio-item {
@@ -126,6 +134,10 @@
   .overlay {
     width: 95%;
     padding: 8px;
+  }
+
+  .video {
+    height: 200px;
   }
 
   #billie-journey h2 {

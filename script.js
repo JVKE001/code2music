@@ -1,6 +1,6 @@
-// Select all video and audio elements
+// Select all audio and iframe elements
 const audioElements = document.querySelectorAll(".audio");
-const videoElements = document.querySelectorAll(".video");
+const iframeElements = document.querySelectorAll("iframe");
 
 // Add event listeners to each audio element
 audioElements.forEach((audio) => {
@@ -11,23 +11,23 @@ audioElements.forEach((audio) => {
         otherAudio.pause();
       }
     });
-    // Pause all videos when audio is played
-    videoElements.forEach((video) => {
-      video.pause();
+    // Pause all iframes when audio is played
+    iframeElements.forEach((iframe) => {
+      iframe.src = iframe.src; // Reloads the iframe to stop the video
     });
   });
 });
 
-// Add event listeners to each video element
-videoElements.forEach((video) => {
-  video.addEventListener("play", () => {
-    // Pause all other video elements when one is played
-    videoElements.forEach((otherVideo) => {
-      if (otherVideo !== video) {
-        otherVideo.pause();
+// Add event listeners to each iframe element
+iframeElements.forEach((iframe) => {
+  iframe.addEventListener("mouseenter", () => {
+    // Reload all other iframes when one is hovered over
+    iframeElements.forEach((otherIframe) => {
+      if (otherIframe !== iframe) {
+        otherIframe.src = otherIframe.src;
       }
     });
-    // Pause all audios when a video is played
+    // Pause all audios when an iframe is hovered over
     audioElements.forEach((audio) => {
       audio.pause();
     });
@@ -35,15 +35,14 @@ videoElements.forEach((video) => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  let videos = document.querySelectorAll("video");
+  let currentPlaying = null;
 
-  videos.forEach((video) => {
-    video.addEventListener("play", function () {
-      videos.forEach((v) => {
-        if (v !== video) {
-          v.pause();
-        }
-      });
+  document.querySelectorAll("iframe").forEach((iframe) => {
+    iframe.addEventListener("mouseenter", function () {
+      if (currentPlaying && currentPlaying !== iframe) {
+        currentPlaying.src = currentPlaying.src; // Reloads the previous iframe to stop the video
+      }
+      currentPlaying = iframe;
     });
   });
 });
