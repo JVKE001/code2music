@@ -7,7 +7,7 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
-/*-------------------------------------------------- HEADER_SECTION --------------------------------------------------------*/
+/*-------------------------------------------------- HEADER_SECTION ---------------------------------------------------*/
 
 nav {
   height: 5rem;
@@ -61,7 +61,7 @@ nav {
   box-shadow: 0 0 5px rgba(212, 165, 255, 0.7);
 }
 
-/*-------------------------------------------------- BANNER_SECTION --------------------------------------------------------*/
+/*-------------------------------------------------- BANNER_SECTION ---------------------------------------------------*/
 
 /* Banner Styles */
 .banner {
@@ -103,7 +103,7 @@ nav {
   text-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
 }
 
-/*-------------------------------------------------- ARTIST_SECTION --------------------------------------------------------*/
+/*-------------------------------------------------- ARTIST_SECTION ---------------------------------------------------*/
 
 /* Artist Styles */
 #artist {
@@ -199,20 +199,15 @@ nav {
   color: #f7f7f7;
 }
 
-/*---------------------------------------------------- OUR_BLOGS_SECTION ---------------------------------------------------*/
-
-.blog {
-  padding: 80px 0;
-  background: #f4f4f4;
-}
+/*---------------------------------------------------- OUR_BLOGS_SECTION ----------------------------------------------*/
 
 #our {
-  color: #fff;
+  color: #c8c7c7;
   text-align: center;
-  margin-top: -1.3rem;
   margin-bottom: 2rem;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
+  font-family: "Lucida Sans";
 }
 
 #blog {
@@ -225,21 +220,21 @@ nav {
 
 .section-title h2 {
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 500;
   color: #ff6f61;
   letter-spacing: 1px;
 }
 
-.section-title h1 {
+.section-title h3 {
   font-size: 1.8em;
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 400;
   margin-bottom: 1.7rem;
 }
 
 .blog__large {
   background: #fff;
-  padding: 1.5rem;
+  padding: 0.2rem;
   border-radius: 12px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   margin-bottom: 2rem;
@@ -249,18 +244,13 @@ nav {
   background-image: url("images/blog1.webp");
   width: 100%;
   height: 400px;
+  border-radius: 12px;
   background-size: cover;
   background-position: center;
-  border-radius: 12px;
-  transition: all 0.3s ease-in-out;
-}
-
-.blog__large__pic:hover {
-  transform: scale(1.05);
 }
 
 .blog__large__text {
-  padding: 1rem 0;
+  padding: 1.5rem;
 }
 
 .blog__large__text span {
@@ -303,14 +293,14 @@ nav {
   border-radius: 12px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
-  padding: 20px;
+  padding: 0.2rem;
   text-align: center;
   transition: all 0.3s ease;
 }
 
 .blog__item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
 }
 
 .blog__item img {
@@ -318,11 +308,6 @@ nav {
   height: 200px;
   object-fit: cover;
   border-radius: 12px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.blog__item img:hover {
-  transform: scale(1.05);
 }
 
 .blog__item h5 {
@@ -344,7 +329,7 @@ nav {
   background-color: #fff;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
 .blog__sidebar__item {
@@ -363,14 +348,13 @@ nav {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
-  border: 1px solid #ddd;
+  border: 1px solid #5c4141;
   border-radius: 6px;
   font-size: 14px;
 }
 
 .blog__sidebar__item form button {
   background-color: #5c00ce;
-  /* padding: 12px !important; */
   color: white;
   cursor: pointer;
   border: none;
@@ -402,12 +386,13 @@ nav {
   text-decoration: none;
   font-size: 1.5rem;
   color: #5c00ce;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease-in-out;
 }
 
-.social-links a:hover {
-  transform: scale(1.2);
+.social-links a :hover {
+  transform: scale(1.1);
   color: #47019b;
+  transition: color 0.3s ease ease-in-out !important;
 }
 
 .blog__sidebar__item span {
@@ -436,27 +421,16 @@ nav {
   color: #ff6f61;
 }
 
-/*--------------------------------------------------- FOOTER_SECTION -------------------------------------------------------*/
+/*--------------------------------------------------- FOOTER_SECTION --------------------------------------------------*/
+
 /* Footer Styling */
 .footer {
   background-color: #121212;
   color: #fff;
-  padding: 60px 20px;
+  padding: 3rem 20px;
   text-align: center;
   width: 100%;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.8);
-}
-
-/* Footer Content Container */
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
 }
 
 /* Each Footer Section */
@@ -485,7 +459,6 @@ nav {
   height: 3px;
   background-color: #1db954;
   margin-top: 8px;
-  border-radius: 5px;
 }
 
 /* Footer Text */
@@ -510,7 +483,7 @@ nav {
 
 .social-icons a:hover {
   color: #1db954;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* Newsletter Section */
@@ -553,14 +526,6 @@ nav {
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: bold;
-}
-
-.newsletter-button i {
-  font-size: 18px;
 }
 
 .newsletter-button:hover {
@@ -572,11 +537,7 @@ nav {
 .footer-bottom {
   border-top: 1px solid #333;
   padding-top: 20px;
-  font-size: 14px;
-  color: #bbb;
   letter-spacing: 1px;
-  padding-bottom: 30px;
-  text-align: center;
 }
 
 .footer-bottom p {
@@ -589,21 +550,28 @@ nav {
   transition: color 0.3s;
 }
 
-.footer-bottom a:hover {
-  color: #1db954;
-  text-decoration: underline;
-}
+/*------------------------------------------------ Responsive Adjustments ---------------------------------------------*/
 
-/*------------------------------------------------ Responsive Adjustments ----------------------------------------------------*/
 @media (max-width: 992px) {
   .banner h1 {
     margin-top: 100px;
     font-size: 2rem;
   }
-
   .banner p {
     font-size: 1rem;
     max-width: 100%;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #4b0082, #4b0082);
+    border-radius: 0 0 10px 10px;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center !important;
   }
 }
 
@@ -613,12 +581,10 @@ nav {
     text-align: center;
   }
 
-  .footer-content {
-    text-align: center;
-  }
-
   .social-icons {
     justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
   }
 
   .newsletter-form {
@@ -627,5 +593,8 @@ nav {
 
   .newsletter-input {
     width: 100%;
+  }
+  .newsletter-button {
+    margin-top: 15px;
   }
 }

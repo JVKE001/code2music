@@ -270,16 +270,28 @@ section p {
   text-decoration: underline;
 }
 
-/*------------------------------------------------ Responsive Adjustments ----------------------------------------------------*/
+/*------------------------------------------------ Responsive Adjustments ---------------------------------------------*/
+
 @media (max-width: 992px) {
   .banner h1 {
     margin-top: 100px;
     font-size: 2rem;
   }
-
   .banner p {
     font-size: 1rem;
     max-width: 100%;
+  }
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(135deg, #4b0082, #4b0082);
+    border-radius: 0 0 10px 10px;
+  }
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center !important;
   }
 }
 
@@ -289,12 +301,10 @@ section p {
     text-align: center;
   }
 
-  .footer-content {
-    text-align: center;
-  }
-
   .social-icons {
     justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
   }
 
   .newsletter-form {
@@ -303,5 +313,8 @@ section p {
 
   .newsletter-input {
     width: 100%;
+  }
+  .newsletter-button {
+    margin-top: 15px;
   }
 }

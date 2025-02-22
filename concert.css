@@ -7,7 +7,7 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
-/*-------------------------------------------------- HEADER_SECTION --------------------------------------------------------*/
+/*-------------------------------------------------- HEADER_SECTION ---------------------------------------------------*/
 
 nav {
   height: 5rem;
@@ -61,7 +61,7 @@ nav {
   box-shadow: 0 0 5px rgba(212, 165, 255, 0.7);
 }
 
-/*------------------------------------------------------- BANNER_SECTION ---------------------------------------------------*/
+/*------------------------------------------------------- BANNER_SECTION ----------------------------------------------*/
 
 .hero {
   background: url("images/concertbg.webp") no-repeat center center/cover;
@@ -99,7 +99,7 @@ nav {
   border-radius: 1rem;
 }
 
-/*-------------------------------------------------- FEATURED_CONCERTS ----------------------------------------------------*/
+/*-------------------------------------------------- FEATURED_CONCERTS ------------------------------------------------*/
 
 #featured-concerts {
   padding: 2.5rem 0;
@@ -140,7 +140,7 @@ nav {
   transform: translateY(-50%);
 }
 
-/*--------------------------------------------------- UPCOMING_EVENTS ------------------------------------------------------*/
+/*--------------------------------------------------- UPCOMING_EVENTS -------------------------------------------------*/
 
 #events {
   background-image: url(images/featured-events-bg.jpg.webp);
@@ -212,7 +212,7 @@ nav {
   width: 0px;
 }
 
-/*--------------------------------------------------- FOOTER_SECTION -------------------------------------------------------*/
+/*--------------------------------------------------- FOOTER_SECTION --------------------------------------------------*/
 /* Footer Styling */
 .footer {
   background-color: #121212;
@@ -370,42 +370,18 @@ nav {
   text-decoration: underline;
 }
 
-/*------------------------------------------------ Responsive Adjustments ----------------------------------------------------*/
-@media (max-width: 992px) {
-  .banner h1 {
+/*------------------------------------------------ Responsive Adjustments----------------------------------------------*/
+@media (max-width: 1200px) {
+  .hero h1 {
     margin-top: 100px;
     font-size: 2rem;
   }
 
-  .banner p {
+  .hero p {
     font-size: 1rem;
     max-width: 100%;
   }
 }
-
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-content {
-    text-align: center;
-  }
-
-  .social-icons {
-    justify-content: center;
-  }
-
-  .newsletter-form {
-    flex-direction: column;
-  }
-
-  .newsletter-input {
-    width: 100%;
-  }
-}
-/*------------------------------------------- MEDIA_QUERIES (RESPONSIVE-LAYOUT) --------------------------------------------*/
 
 @media (max-width: 991px) {
   .navbar-collapse {
@@ -425,5 +401,33 @@ nav {
   .navbar-nav .nav-link {
     color: white !important;
     padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  #concertCarousel img {
+    width: 100vw !important;
+    height: 400px;
+  }
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-input {
+    width: 100%;
+  }
+  .newsletter-button {
+    margin-top: 15px;
   }
 }

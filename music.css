@@ -7,7 +7,7 @@ body {
   animation: fadeIn 1s ease-in-out;
 }
 
-/*-------------------------------------------------- HEADER_SECTION --------------------------------------------------------*/
+/*-------------------------------------------------- HEADER_SECTION ---------------------------------------------------*/
 
 nav {
   height: 5rem;
@@ -61,7 +61,7 @@ nav {
   box-shadow: 0 0 5px rgba(212, 165, 255, 0.7);
 }
 
-/*------------------------------------------------------ MUSIC_SECTION ----------------------------------------------------*/
+/*------------------------------------------------------ MUSIC_SECTION ------------------------------------------------*/
 
 section {
   padding-top: 6rem;
@@ -147,27 +147,16 @@ audio {
   border: none;
 }
 
-/*--------------------------------------------------- FOOTER_SECTION -------------------------------------------------------*/
+/*--------------------------------------------------- FOOTER_SECTION --------------------------------------------------*/
+
 /* Footer Styling */
 .footer {
   background-color: #121212;
   color: #fff;
-  padding: 60px 20px;
+  padding: 3rem 20px;
   text-align: center;
   width: 100%;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.8);
-}
-
-/* Footer Content Container */
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  gap: 40px;
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 20px;
 }
 
 /* Each Footer Section */
@@ -196,7 +185,6 @@ audio {
   height: 3px;
   background-color: #1db954;
   margin-top: 8px;
-  border-radius: 5px;
 }
 
 /* Footer Text */
@@ -221,7 +209,7 @@ audio {
 
 .social-icons a:hover {
   color: #1db954;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* Newsletter Section */
@@ -264,14 +252,6 @@ audio {
   font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: bold;
-}
-
-.newsletter-button i {
-  font-size: 18px;
 }
 
 .newsletter-button:hover {
@@ -283,11 +263,7 @@ audio {
 .footer-bottom {
   border-top: 1px solid #333;
   padding-top: 20px;
-  font-size: 14px;
-  color: #bbb;
   letter-spacing: 1px;
-  padding-bottom: 30px;
-  text-align: center;
 }
 
 .footer-bottom p {
@@ -300,12 +276,8 @@ audio {
   transition: color 0.3s;
 }
 
-.footer-bottom a:hover {
-  color: #1db954;
-  text-decoration: underline;
-}
+/*------------------------------------------------ Responsive Adjustments ---------------------------------------------*/
 
-/*------------------------------------------------ Responsive Adjustments ----------------------------------------------------*/
 @media (max-width: 992px) {
   .banner h1 {
     margin-top: 100px;
@@ -324,12 +296,10 @@ audio {
     text-align: center;
   }
 
-  .footer-content {
-    text-align: center;
-  }
-
   .social-icons {
     justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 30px;
   }
 
   .newsletter-form {
@@ -339,11 +309,11 @@ audio {
   .newsletter-input {
     width: 100%;
   }
+  .newsletter-button {
+    margin-top: 15px;
+  }
 }
 
-/*------------------------------------------- MEDIA_QUERIES_(RESPONSIVE-LAYOUT) --------------------------------------------*/
-
-/*----------------- FOR 991px -----------------*/
 @media (max-width: 991px) {
   .navbar-collapse {
     position: absolute;
@@ -365,7 +335,6 @@ audio {
   }
 }
 
-/*----------------- FOR 830px -----------------*/
 @media (max-width: 830px) {
   .audio-item {
     gap: 5px;
@@ -401,7 +370,6 @@ audio {
   }
 }
 
-/*----------------- FOR 576px -----------------*/
 @media (max-width: 576px) {
   .audio-item {
     gap: 5px;
@@ -432,7 +400,6 @@ audio {
   }
 }
 
-/*----------------- FOR 360px -----------------*/
 @media (max-width: 360px) {
   .audio-item {
     gap: 5px;
