@@ -93,43 +93,39 @@ h1 {
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
 }
 
-/* Video title overlay */
-.video-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 18px;
-  display: none;
-}
-
-/* Show overlay on hover */
-.video-container:hover .video-overlay {
-  display: block;
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Styling for video titles */
 .video-title {
   font-family: "Arial", sans-serif;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 1px;
+  color: rgb(211, 165, 255);
+  text-align: center;
 }
 
-/* Make the video container responsive */
+/* Responsive iframe styling */
 .video-card {
-  width: 100%;
-  height: auto;
+  width: 96%;
+  height: 350px;
   border-radius: 15px;
+  border: none;
+  margin-left: 2%;
+}
+
+.video-container-clip {
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.video-container-clip iframe {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.video-container-clip:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
 }
 
 /*--------------------------------------------------- FOOTER_SECTION --------------------------------------------------*/

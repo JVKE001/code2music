@@ -97,12 +97,11 @@ header {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-video {
+.video {
   width: 100%;
-  height: auto;
+  height: 500px;
   border-radius: 10px;
 }
-
 .audio-container {
   display: flex;
   flex-direction: column;
